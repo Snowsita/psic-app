@@ -1,0 +1,65 @@
+<div class="centered">
+  <div class="h-centered">
+    <div class="mobile-screen">
+      <div class="status-bar">
+        <span>9:41</span>
+        <div class="icons">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
+        </div>
+      </div>
+      <div class="screen-header justify-content-between">
+        <div class="d-flex align-items-center">
+          <i class="fas fa-bars me-2"></i>
+          <span class="header-title">Diario emocional</span>
+        </div>
+        <i class="fas fa-user-circle fa-2x text-secondary"></i>
+      </div>
+      <div class="screen-content journal-screen px-3 py-3">
+        <div class="d-flex mb-3 current-mood-cards">
+          <div class="mood-card me-2 p-3 flex-grow-1">
+            <p class="mb-1 text-muted">Hoy</p>
+            <h4 class="mb-0">Has estado <br> bastante bien</h4>
+          </div>
+          <div class="mood-card p-3 flex-grow-1">
+            <p class="mb-1 text-muted">Ayer</p>
+            <h4 class="mb-0">Has estado <br> un poco triste</h4>
+          </div>
+        </div>
+        <div class="chart-container card p-3">
+          <p class="chart-title">Seguimiento emocional</p>
+          <div class="chart-area position-relative">
+            <div class="y-axis-labels">
+              <span>Tranquilo</span>
+              <span>Neutral</span>
+              <span>Ansioso</span>
+              <span>Triste</span>
+              <span>Muy mal</span>
+            </div>
+            <svg viewBox="0 0 280 150" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+              <line x1="0" y1="130" x2="280" y2="130" stroke="#eee" stroke-width="0.5"></line>
+              <line x1="0" y1="100" x2="280" y2="100" stroke="#eee" stroke-width="0.5"></line>
+              <line x1="0" y1="70" x2="280" y2="70" stroke="#eee" stroke-width="0.5"></line>
+              <line x1="0" y1="40" x2="280" y2="40" stroke="#eee" stroke-width="0.5"></line>
+              <line x1="0" y1="10" x2="280" y2="10" stroke="#eee" stroke-width="0.5"></line>
+              <polyline fill="none" stroke="var(--primary-color, #6C63FF)" stroke-width="2"
+                        points="0,140,20,135,40,120,60,115,80,105,100,100,120,95,140,85,160,90,180,80,200,70,220,60,240,50,260,30,280,20"/>
+            </svg>
+            <div class="x-axis-labels">
+              <span>Nov 23</span>
+              <span>24</span>
+              <span>25</span>
+              <span>26</span>
+              <span>27</span>
+              <span>28</span>
+              <span>29</span>
+              <span>30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-handle"></div>
+    </div>
+  </div>
+</div>
