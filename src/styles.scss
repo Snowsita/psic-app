@@ -1,59 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
-// src/styles.scss (or wherever your main global styles are)
-
-/* You'd typically import Bootstrap here in an Angular project: */
-// @import "node_modules/bootstrap/scss/bootstrap";
-
-/* Or link it in angular.json */
-// "styles": [
-//   "src/styles.scss",
-//   "node_modules/bootstrap/dist/css/bootstrap.min.css"
-// ],
-
-
-// Variables (Optional, but good for consistency)
-$primary-color: #6C63FF; // A purple-ish tone from the chart line
-$secondary-text: #6c757d; // Bootstrap's text-secondary color
-$light-bg: #f8f9fa; // Light gray background
-$dark-button: #212529; // Bootstrap's dark button color
-$chat-sent-bubble: #212529; // Dark for sent messages
-$chat-received-bubble: #e0e0e0; // Light gray for received messages
+$primary-color: #6C63FF;
+$secondary-text: #6c757d;
+$light-bg: #f8f9fa;
+$dark-button: #212529;
+$chat-sent-bubble: #212529;
+$chat-received-bubble: #e0e0e0;
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f0f2f5; // A general background for the page
+  background-color: #f0f2f5;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  overflow-x: auto; // Allow horizontal scrolling if multiple screens are displayed side-by-side
+  overflow-x: auto;
 }
 
-/* Container for multiple mobile screens, useful for showcasing */
 .app-mockup-container {
   background-color: #f0f2f5;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  display: flex; /* For displaying multiple screens next to each other */
-  gap: 20px;    /* Space between screens */
-  overflow-x: auto; /* Enable horizontal scrolling if screens exceed viewport */
-  justify-content: flex-start; /* Align screens to the start */
-  align-items: flex-start; /* Align screens to the top */
-  flex-wrap: nowrap; /* Prevent screens from wrapping */
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
-/* Base style for a single mobile screen simulation */
 .mobile-screen {
-  width: 320px; // Standard mobile width approximation
-  min-width: 320px; // Ensure it doesn't shrink smaller
-  height: 600px; // Standard mobile height approximation
+  width: 320px;
+  min-width: 320px;
+  height: 600px;
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
-  overflow: hidden; // Ensures content doesn't spill
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -72,7 +56,6 @@ body {
   width: 100vw;
 }
 
-/* iPhone X/11-like bottom handle */
 .bottom-handle {
   width: 130px;
   height: 5px;
@@ -84,7 +67,6 @@ body {
   transform: translateX(-50%);
 }
 
-/* Status bar (time, signal, battery) common to all */
 .status-bar {
   display: flex;
   justify-content: space-between;
@@ -99,7 +81,6 @@ body {
   }
 }
 
-/* Generic header for screens with back button/title */
 .screen-header {
   display: flex;
   align-items: center;
@@ -117,20 +98,18 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     flex-grow: 1;
-    text-align: center; // Default center alignment
+    text-align: center;
   }
 
   &.justify-content-between .header-title {
-    text-align: left; // Override for specific screens if needed
-    margin-left: 10px; // Space from hamburger menu
+    text-align: left;
+    margin-left: 10px;
   }
 }
 
 .screen-content {
   flex-grow: 1;
-  overflow-y: auto; // Allow scrolling for content
-  padding-bottom: 50px; // Space for bottom handles/bars
+  overflow-y: auto;
+  padding-bottom: 50px;
 }
 
-// Ensure Bootstrap is loaded before custom styles in angular.json
-// Or import it if you use @import in your global SCSS
