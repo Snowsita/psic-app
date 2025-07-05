@@ -1,63 +1,78 @@
-<div class="centered">
-  <div class="h-centered">
-    <div class="mobile-screen">
-      <div class="status-bar">
-        <span>9:41</span>
-        <div class="icons">
-          <i class="fas fa-signal"></i>
-          <i class="fas fa-wifi"></i>
-          <i class="fas fa-battery-full"></i>
-        </div>
+<app-mobile-screen>
+  <div class="screen-header chat-header">
+    <i class="fas fa-chevron-left me-3"></i>
+    <div class="profile-info flex-grow-1">
+      <i class="fas fa-user-circle fa-2x me-2"></i>
+      <div>
+        <span class="profile-name">Amigo Virtual</span>
+        <br>
+        <small class="profile-status">Activo hace 11 min</small>
       </div>
-      <div class="screen-header chat-header">
-        <i class="fas fa-chevron-left me-3"></i>
-        <div class="profile-info flex-grow-1">
-          <i class="fas fa-user-circle fa-2x me-2"></i>
-          <div>
-            <span class="profile-name">Chatbot</span>
-            <small class="profile-status">Activo hace 11 min</small>
-          </div>
-        </div>
-        <i class="fas fa-phone me-3"></i>
-        <i class="fas fa-video"></i>
-      </div>
-      <div class="screen-content chat-screen px-3 py-3">
-        <div class="chat-message received">
-          <p>Este es el chat principal</p>
-        </div>
-        <div class="chat-timestamp text-center my-2">29 Jun 2025, 9:41 AM</div>
-        <div class="chat-message sent">
-          <p>¿Oh?</p>
-        </div>
-        <div class="chat-message sent">
-          <p>Genial</p>
-        </div>
-        <div class="chat-message sent">
-          <p>¿Cómo funciona?</p>
-        </div>
-        <div class="chat-message received">
-          <p>Sólo edita cualquier texto para escribir la conversación que quieras mostrar y elimina las burbujas que no quieras usar.</p>
-        </div>
-        <div class="chat-message received smaller">
-          <p>¡Listo!</p>
-        </div>
-        <div class="chat-message sent">
-          <p>Hmmm</p>
-        </div>
-        <div class="chat-message sent">
-          <p>Creo que lo entiendo</p>
-        </div>
-        <div class="chat-message sent">
-          <p>Iría al Centro de Ayuda si tengo más preguntas</p>
-        </div>
-      </div>
-      <div class="chat-input-bar">
-        <input type="text" placeholder="Mensaje...">
-        <i class="fas fa-microphone"></i>
-        <i class="fas fa-smile"></i>
-        <i class="fas fa-image"></i>
-      </div>
-      <div class="bottom-handle"></div>
+    </div>
+    <i class="fas fa-phone me-3"></i>
+    <i class="fas fa-video"></i>
+  </div>
+  <div class="screen-content chat-screen px-3 py-3">
+    <div class="chat-message sent">
+      <p>Hola… no sé, solo me siento muy cansado últimamente. Como que nada me motiva.</p>
+    </div>
+    <div class="chat-message received">
+      <p>Hola, gracias por escribirme. Lamento que te sientas así. ¿Te gustaría contarme un poco más sobre lo que has estado viviendo últimamente? Estoy aquí para escucharte sin juzgar.</p>
+    </div>
+    <div class="chat-message sent">
+      <p>No sabría decirlo con claridad. Solo me despierto sin ganas de hacer nada… ni siquiera las cosas que antes me gustaban. Me siento estancado.</p>
+    </div>
+    <div class="chat-message received">
+      <p>Eso que describes puede ser una señal de que algo dentro de ti necesita atención o cuidado. A veces, el cuerpo y la mente nos hablan a través del cansancio y la desmotivación.</p>
+      <p>¿Te ha pasado algo importante recientemente? ¿O sientes que esto ha venido acumulándose poco a poco?</p>
+    </div>
+    <div class="chat-message sent">
+      <p>Creo que se ha ido acumulando. Trabajo, familia, todo se siente como demasiado. Pero al mismo tiempo, me da culpa no tener fuerzas.</p>
+    </div>
+    <div class="chat-message received">
+      <p>Es completamente válido sentirse abrumado cuando hay muchas exigencias alrededor. Sentir culpa por estar agotado es algo común, pero recuerda: descansar también es una necesidad, no un lujo.</p>
+      <p>¿Te gustaría que te sugiera una técnica para descargar un poco esa presión?</p>
+    </div>
+    <div class="chat-message sent">
+      <p>Sí, por favor.</p>
+    </div>
+    <div class="chat-message received">
+      <p>Claro. Empecemos con algo sencillo:</p>
+      <p>🧘 Ejercicio de respiración breve (1 minuto)</p>
+      <ol>
+        <li>Inhala lentamente por la nariz contando hasta 4.</li>
+        <li>Sostén el aire por 4 segundos.</li>
+        <li>Exhala por la boca contando hasta 6.</li>
+        <li>Repite este ciclo 3 veces.</li>
+      </ol>
+      <p>¿Te gustaría intentarlo conmigo ahora?</p>
+    </div>
+    <div class="chat-message sent">
+      <p>Lo hice. Me siento un poco más tranquilo, gracias.</p>
+    </div>
+    <div class="chat-message received">
+      <p>Me alegra mucho saber eso 😊 A veces, solo necesitamos un pequeño respiro para empezar a recuperar el equilibrio.</p>
+      <p>También puedo sugerirte un espacio donde puedas registrar tus emociones diariamente o darte un consejo personalizado cada día, ¿te gustaría eso?</p>
+    </div>
+    <div class="chat-message sent">
+      <p>Sí, me gustaría lo del consejo diario.</p>
+    </div>
+    <div class="chat-message received">
+      <p>Perfecto. Aquí va el de hoy:</p>
+      <p>🪷 Consejo del día</p>
+      <p>“Sé tan amable contigo mismo como lo serías con alguien que amas mucho. No necesitas ser perfecto, solo estar presente contigo.”</p>
+      <p>Estoy aquí para acompañarte. Si mañana también necesitas hablar o simplemente compartir cómo te sientes, no dudes en volver.</p>
     </div>
   </div>
-</div>
+  <div class="screen-footer chat-footer">
+    <div class="message-bar">
+      <div class="message-input flex-grow-1">
+        <input type="text" placeholder="Escribe un mensaje...">
+        <i class="fas fa-microphone"></i>
+        <i class="fas fa-camera"></i>
+        <i class="fas fa-plus-circle"></i>
+      </div>
+
+    </div>
+  </div>
+</app-mobile-screen>

@@ -1,43 +1,30 @@
-<div class="centered">
-  <div class="h-centered">
-    <div class="mobile-screen">
-      <div class="status-bar">
-        <span>9:41</span>
-        <div class="icons">
-          <i class="fas fa-signal"></i>
-          <i class="fas fa-wifi"></i>
-          <i class="fas fa-battery-full"></i>
-        </div>
+<app-mobile-screen>
+  <div class="screen-content login-screen">
+    <h1 class="text-center mb-2">Chatbot</h1>
+    <p class="text-center mb-4 subtitle">Crea una cuenta o inicia sesión</p>
+    <form class="px-3" (submit)="onContinue($event)">
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="correo@ejemplo.com">
       </div>
-      <div class="screen-content login-screen">
-        <h1 class="text-center mb-2">Chatbot</h1>
-        <p class="text-center mb-4 subtitle">Crea una cuenta o inicia sesión</p>
-        <form class="px-3">
-          <div class="mb-3">
-            <input type="email" class="form-control" placeholder="correo@ejemplo.com">
-          </div>
-          <div class="mb-4">
-            <input type="password" class="form-control" placeholder="Contraseña">
-          </div>
-          <button type="submit" class="btn btn-dark w-100 mb-3 rounded-pill py-2">Continuar</button>
-          <div class="separator mb-3">
-            <span>o</span>
-          </div>
-          <button type="button" class="btn btn-light w-100 mb-3 rounded-pill py-2 border">
-            <i class="fas fa-user-circle me-2"></i>
-            Continuar con Google
-          </button>
-          <button type="button" class="btn btn-light w-100 rounded-pill py-2 border">
-            <i class="fas fa-user-circle me-2"></i>
-            Continuar con Apple
-          </button>
-        </form>
-        <p class="terms-policy text-center mt-4 px-3">
-          Al hacer clic en continuar, aceptas nuestros <a href="#">Términos de servicio</a> y <a href="#">Política de privacidad</a>
-        </p>
+      <div class="mb-4">
+        <input type="password" class="form-control" placeholder="Contraseña">
       </div>
-      <div class="bottom-handle"></div>
-    </div>
+      <button type="submit" class="btn btn-dark w-100 mb-3 rounded-pill py-2">Continuar</button>
+      <div class="separator mb-3">
+        <span>o</span>
+      </div>
+      <button type="button" class="btn btn-light w-100 mb-3 rounded-pill py-2 border">
+        <i class="fas fa-user-circle me-2"></i>
+        Continuar con Google
+      </button>
+      <button type="button" class="btn btn-light w-100 rounded-pill py-2 border">
+        <i class="fas fa-user-circle me-2"></i>
+        Continuar con Apple
+      </button>
+    </form>
+    <p class="terms-policy text-center mt-4 px-3">
+      Al hacer clic en continuar, aceptas nuestros <a href="#">Términos de servicio</a> y <a href="#">Política de
+      privacidad</a>
+    </p>
   </div>
-</div>
-
+</app-mobile-screen>

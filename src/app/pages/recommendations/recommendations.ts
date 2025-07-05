@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { MobileScreenComponent } from '../../components/mobile-screen/mobile-screen';
 
 @Component({
   selector: 'app-recommendations',
-  imports: [],
+  standalone: true,
+  imports: [MobileScreenComponent],
   templateUrl: './recommendations.html',
   styleUrl: './recommendations.scss'
 })

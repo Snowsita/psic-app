@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { MobileScreenComponent } from '../../components/mobile-screen/mobile-screen';
 
 @Component({
   selector: 'app-chat',
-  imports: [],
+  standalone: true,
+  imports: [MobileScreenComponent],
   templateUrl: './chat.html',
   styleUrl: './chat.scss'
 })

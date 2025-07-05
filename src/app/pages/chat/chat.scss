@@ -40,6 +40,7 @@
     line-height: 1.4;
     font-size: 0.9rem;
     color: #000;
+    text-align: justify;
 
     &.sent {
       background-color: #e0e0e0;
@@ -65,6 +66,7 @@
     color: var(--secondary-text, #6c757d);
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
   }
 }
 
@@ -102,3 +104,48 @@
     }
   }
 }
+
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+
+  .message-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    input {
+      flex-grow: 1;
+      border: none;
+      background-color: #f0f0f0;
+      border-radius: 20px;
+      padding: 10px 15px;
+      padding-right: 35px; // Space for the camera icon
+      outline: none;
+      font-size: 0.9rem;
+    }
+
+    i.fa-camera {
+      margin-left: 8px;
+      margin-right: 8px;
+      right: 12px;
+      font-size: 1.1rem;
+    }
+
+    i.fa-microphone {
+      margin-left: 8px;
+    }
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  > i {
+    color: var(--primary-color, #6C63FF);
+  }
+}
+

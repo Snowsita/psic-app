@@ -1,0 +1,52 @@
+.mobile-screen {
+  width: 320px;
+  min-width: 320px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.centered {
+  display: block;
+  align-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.h-centered {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.bottom-handle {
+  width: 130px;
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+
+  .icons i {
+    margin-left: 5px;
+  }
+}
+
